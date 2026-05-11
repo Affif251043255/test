@@ -173,3 +173,23 @@ This box plot displays the distribution of 'Part Length' from the 'X002' dataset
 </iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Part Length vs Part Resistance
+
+This scatter plot illustrates the relationship between 'Part Length' and 'Part Resistance' from the 'X002' dataset, helping to identify potential correlations or patterns between these two process parameters.
+:::
+
+::: {.column width="50%"}
+<iframe 
+  data-src='media/plots/x002_partlength_partresistance_scatter.html' 
+  width='100%' 
+  height='500px' 
+  style='border:none;' 
+  scrolling='no'>
+</iframe>
+:::
+::::
