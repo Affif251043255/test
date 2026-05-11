@@ -133,3 +133,23 @@ The work done $W$ is positive when the system expands against an external pressu
 
 # Bibliography
 <div id="refs"></div>
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Part Length Distribution
+
+This histogram visualizes the distribution of 'Part Length' from the 'X002' dataset, showing the frequency of different part length values.
+:::
+
+::: {.column width="50%"}
+<iframe 
+  data-src='media/plots/x002_partlength_histogram.html' 
+  width='100%' 
+  height='500px' 
+  style='border:none;' 
+  scrolling='no'>
+</iframe>
+:::
+::::
