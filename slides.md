@@ -153,3 +153,23 @@ This histogram visualizes the distribution of 'Part Length' from the 'X002' data
 </iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Part Length Box Plot
+
+This box plot displays the distribution of 'Part Length' from the 'X002' dataset, showing its median, quartiles, and potential outliers.
+:::
+
+::: {.column width="50%"}
+<iframe 
+  data-src='media/plots/x002_partlength_boxplot.html' 
+  width='100%' 
+  height='500px' 
+  style='border:none;' 
+  scrolling='no'>
+</iframe>
+:::
+::::
