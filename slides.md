@@ -193,3 +193,23 @@ This scatter plot illustrates the relationship between 'Part Length' and 'Part R
 </iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Average Part Length by Machine
+
+This bar chart illustrates the average 'Part Length' for each 'Machine' from the 'X002' dataset, allowing for easy comparison of part length performance across different machines.
+:::
+
+::: {.column width="50%"}
+<iframe 
+  data-src='media/plots/x002_avg_partlength_barchart.html' 
+  width='100%' 
+  height='500px' 
+  style='border:none;' 
+  scrolling='no'>
+</iframe>
+:::
+::::
