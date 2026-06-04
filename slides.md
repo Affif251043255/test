@@ -297,3 +297,165 @@ Process capability histogram for Machine 3.
 <iframe data-src='media/plots/m3_capability.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Control Chart
+Individual measurements (X) for Machine 1.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m1_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Moving Range
+Moving Range (MR) chart for Machine 1, tracking the absolute difference between consecutive points.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m1_m_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Control Chart
+Individual measurements (X) for Machine 2.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m2_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Moving Range
+Moving Range (MR) chart for Machine 2.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m2_m_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Control Chart
+Individual measurements (X) for Machine 3.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m3_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Moving Range
+Moving Range (MR) chart for Machine 3.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m3_m_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Analysis
+- **Type:** Individuals Chart
+- **Parameter:** Part Length
+
+Monitoring individual measurements to detect shifts in the process mean.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m1_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Variation
+- **Type:** Moving Range (MR) Chart
+- **Parameter:** Range between parts
+
+Monitoring short-term variability to ensure consistent performance.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m1_m_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Analysis
+Individuals Control Chart for Machine 2 measurements.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m2_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Variation
+Moving Range (MR) chart for Machine 2 variability.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m2_m_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Analysis
+Individuals Control Chart for Machine 3 measurements.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m3_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Variation
+Moving Range (MR) chart for Machine 3 variability.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m3_m_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
