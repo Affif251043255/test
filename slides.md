@@ -213,3 +213,87 @@ This bar chart illustrates the average 'Part Length' for each 'Machine' from the
 </iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Analysis
+**Parameters:**
+- Pressure: 200kPa
+- Temperature: 338K
+- Target: 50 $\pm$ 5
+
+This control chart monitors the process stability for Machine 1.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m1_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Capability
+
+Visualizing the distribution of Part Length against the Lower Specification Limit (45) and Upper Specification Limit (55).
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m1_capability.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Analysis
+Control chart monitoring for Machine 2 under identical settings.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m2_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Capability
+Process capability histogram for Machine 2.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m2_capability.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Analysis
+Control chart monitoring for Machine 3.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m3_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Capability
+Process capability histogram for Machine 3.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m3_capability.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
