@@ -3,48 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>Manufacturing Quality Report</title>
+  <title>Manufacturing SPC Report</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/reset.css">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/css/reveal.css">
   <style>
-    .reveal .sourceCode {  /* see #7635 */
-      overflow: visible;
-    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/serif.css" id="theme">
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/css/theme/serif.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://unpkg.com/reveal.js@4/css/print/pdf.css' : 'https://unpkg.com/reveal.js@4/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="https://unpkg.com/reveal.js@4/lib/js/html5shiv.js"></script>
+  <![endif]-->
   <button id="nav-btn" onclick="toggleNavMenu()" title="Open Slide List">📋 MENU</button>
 
   <div id="nav-menu">
@@ -558,299 +542,82 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Manufacturing Quality Report</h1>
+  <h1 class="title">Manufacturing SPC Report</h1>
 </section>
 
-<section id="spc-capability-analysis" class="slide level1">
-<h1>SPC &amp; Capability Analysis</h1>
-</section>
-<section class="slide level1">
-
-<h2 id="global-comparison-table">Global Comparison Table</h2>
-<table>
-<colgroup>
-<col style="width: 13%" />
-<col style="width: 9%" />
-<col style="width: 11%" />
-<col style="width: 17%" />
-<col style="width: 8%" />
-<col style="width: 8%" />
-<col style="width: 8%" />
-<col style="width: 13%" />
-<col style="width: 9%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Machine</th>
-<th style="text-align: right;">Mean</th>
-<th style="text-align: right;">StdDev</th>
-<th style="text-align: left;">Stability</th>
-<th style="text-align: right;">Cp</th>
-<th style="text-align: right;">Cpk</th>
-<th style="text-align: right;">Cpm</th>
-<th style="text-align: left;">Capable</th>
-<th style="text-align: right;">Rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">49.985</td>
-<td style="text-align: right;">0.548</td>
-<td style="text-align: left;">Special Cause</td>
-<td style="text-align: right;">3.06</td>
-<td style="text-align: right;">3.051</td>
-<td style="text-align: right;">3.059</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">49.661</td>
-<td style="text-align: right;">1.141</td>
-<td style="text-align: left;">Special Cause</td>
-<td style="text-align: right;">1.474</td>
-<td style="text-align: right;">1.374</td>
-<td style="text-align: right;">1.412</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">51.172</td>
-<td style="text-align: right;">1.185</td>
-<td style="text-align: left;">Special Cause</td>
-<td style="text-align: right;">1.387</td>
-<td style="text-align: right;">1.062</td>
-<td style="text-align: right;">0.993</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: right;">3</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Best Performer:</strong> Machine 2</p>
+<section id="capability-overview" class="slide level1">
+<h1>Capability Overview</h1>
 </section>
 <section class="slide level1">
 
-<h2 id="machine-2-spc-capability">Machine 2: SPC &amp; Capability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="statistical-summary">Statistical Summary</h3>
+<h3 id="machine-1-performance">Machine 1 Performance</h3>
 <ul>
-<li><strong>Stability:</strong> Special Cause</li>
-<li><strong>Mean:</strong> 49.985 mm</li>
-<li><strong>Cpk:</strong> 3.051</li>
-<li><strong>Capable (1.33):</strong> Yes</li>
-</ul>
-<p><em>Target: 50.0 | Tolerance: ±5.0</em></p>
-</div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m2_cap.html" width="100%" height="500px" style="border:none;">
-</iframe>
-</div>
-</div>
-</section>
-<section class="slide level1">
-
-<h2 id="machine-1-spc-capability">Machine 1: SPC &amp; Capability</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="statistical-summary-1">Statistical Summary</h3>
-<ul>
-<li><strong>Stability:</strong> Special Cause</li>
-<li><strong>Mean:</strong> 49.661 mm</li>
+<li><strong>Cp:</strong> 1.474</li>
 <li><strong>Cpk:</strong> 1.374</li>
-<li><strong>Capable (1.33):</strong> Yes</li>
 </ul>
-<p><em>Target: 50.0 | Tolerance: ±5.0</em></p>
+<p>Machine 1 shows stable performance near the target.</p>
 </div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m1_cap.html" width="100%" height="500px" style="border:none;">
+<iframe data-src="media/plots/m1_capability.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
 </section>
 <section class="slide level1">
 
-<h2 id="machine-3-spc-capability">Machine 3: SPC &amp; Capability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="statistical-summary-2">Statistical Summary</h3>
+<h3 id="machine-2-performance">Machine 2 Performance</h3>
 <ul>
-<li><strong>Stability:</strong> Special Cause</li>
-<li><strong>Mean:</strong> 51.172 mm</li>
-<li><strong>Cpk:</strong> 1.062</li>
-<li><strong>Capable (1.33):</strong> No</li>
+<li><strong>Cp:</strong> 3.06</li>
+<li><strong>Cpk:</strong> 3.051</li>
 </ul>
-<p><em>Target: 50.0 | Tolerance: ±5.0</em></p>
+<p>Machine 2 indicates potential centering issues or higher variance.</p>
 </div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m3_cap.html" width="100%" height="500px" style="border:none;">
+<iframe data-src="media/plots/m2_capability.html" width="100%" height="500px" style="border:none;">
+</iframe>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="machine-3-performance">Machine 3 Performance</h3>
+<ul>
+<li><strong>Cp:</strong> 1.387</li>
+<li><strong>Cpk:</strong> 1.062</li>
+</ul>
+<p>Critical review of Machine 3 stability required.</p>
+</div><div class="column" style="width:50%;">
+<iframe data-src="media/plots/m3_capability.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
 </section>
 <section id="bibliography" class="slide level1">
 <h1>Bibliography</h1>
-<div id="refs" role="list">
+<div id="refs" role="doc-bibliography">
 
 </div>
 </section>
     </div>
   </div>
 
-  <script src="https://unpkg.com/reveal.js@4/dist/reveal.js"></script>
-
-  <!-- reveal.js plugins -->
-  <script src="https://unpkg.com/reveal.js@4/plugin/notes/notes.js"></script>
-  <script src="https://unpkg.com/reveal.js@4/plugin/search/search.js"></script>
-  <script src="https://unpkg.com/reveal.js@4/plugin/zoom/zoom.js"></script>
-  <script src="https://unpkg.com/reveal.js@4/plugin/math/math.js"></script>
+  <script src="https://unpkg.com/reveal.js@4/js/reveal.js"></script>
 
   <script>
 
       // Full list of configuration options available at:
-      // https://revealjs.com/config/
+      // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        // Display controls in the bottom right corner
-        controls: true,
-
-        // Help the user learn the controls by providing hints, for example by
-        // bouncing the down arrow when they first encounter a vertical slide
-        controlsTutorial: true,
-
-        // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'bottom-right',
-
-        // Visibility rule for backwards navigation arrows; "faded", "hidden"
-        // or "visible"
-        controlsBackArrows: 'faded',
-
-        // Display a presentation progress bar
-        progress: true,
-
-        // Display the page number of the current slide
-        slideNumber: false,
-
-        // 'all', 'print', or 'speaker'
-        showSlideNumber: 'all',
-
-        // Add the current slide number to the URL hash so that reloading the
-        // page/copying the URL will return you to the same slide
-        hash: true,
-
-        // Start with 1 for the hash rather than 0
-        hashOneBasedIndex: false,
-
-        // Flags if we should monitor the hash and change slides accordingly
-        respondToHashChanges: true,
-
         // Push each slide change to the browser history
-        history: false,
-
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
-
-        // Enable the slide overview mode
-        overview: true,
-
-        // Disables the default reveal.js slide layout (scaling and centering)
-        // so that you can use custom CSS layout
-        disableLayout: false,
-
-        // Vertical centering of slides
-        center: true,
-
-        // Enables touch navigation on devices with touch input
-        touch: true,
-
-        // Loop the presentation
-        loop: false,
-
-        // Change the presentation direction to be RTL
-        rtl: false,
-
-        // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'default',
-
-        // Randomizes the order of slides each time the presentation loads
-        shuffle: false,
-
-        // Turns fragments on and off globally
-        fragments: true,
-
-        // Flags whether to include the current fragment in the URL,
-        // so that reloading brings you to the same fragment position
-        fragmentInURL: true,
-
-        // Flags if the presentation is running in an embedded mode,
-        // i.e. contained within a limited portion of the screen
-        embedded: false,
-
-        // Flags if we should show a help overlay when the questionmark
-        // key is pressed
-        help: true,
-
-        // Flags if it should be possible to pause the presentation (blackout)
-        pause: true,
-
-        // Flags if speaker notes should be visible to all viewers
-        showNotes: false,
-
-        // Global override for autoplaying embedded media (null/true/false)
-        autoPlayMedia: null,
-
-        // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: null,
-
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
-        // Stop auto-sliding after user input
-        autoSlideStoppable: true,
-
-        // Use this method for navigation when auto-sliding
-        autoSlideMethod: null,
-
-        // Specify the average time in seconds that you think you will spend
-        // presenting each slide. This is used to show a pacing timer in the
-        // speaker view
-        defaultTiming: null,
-
-        // Enable slide navigation via mouse wheel
-        mouseWheel: false,
-
-        // The display mode that will be used to show slides
-        display: 'block',
-
-        // Hide cursor if inactive
-        hideInactiveCursor: true,
-
-        // Time before the cursor is hidden (in ms)
-        hideCursorTime: 5000,
-
-        // Opens links in an iframe preview overlay
-        previewLinks: false,
-
-        // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
-
-        // Transition speed (default/fast/slow)
-        transitionSpeed: 'default',
-
-        // Transition style for full page slide backgrounds
-        // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'fade',
-
-        // Number of slides away from the current that are visible
-        viewDistance: 3,
-
-        // Number of slides away from the current that are visible on mobile
-        // devices. It is advisable to set this to a lower number than
-        // viewDistance in order to save resources.
-        mobileViewDistance: 2,
-
+        history: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          mathjax: '/usr/share/javascript/mathjax/tex-mml-chtml.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -866,12 +633,12 @@
           },
         },
 
-        // reveal.js plugins
-        plugins: [
-          RevealMath,
-          RevealNotes,
-          RevealSearch,
-          RevealZoom
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://unpkg.com/reveal.js@4/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://unpkg.com/reveal.js@4/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://unpkg.com/reveal.js@4/plugin/math/math.js', async: true },
+          { src: 'https://unpkg.com/reveal.js@4/plugin/notes/notes.js', async: true }
         ]
       });
     </script>
