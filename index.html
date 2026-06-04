@@ -558,18 +558,18 @@
     <div class="slides">
 
 
-<section id="process-capability-analysis-report" class="slide level1">
-<h1>Process Capability Analysis Report</h1>
+<section id="machine-performance-report" class="slide level1">
+<h1>Machine Performance Report</h1>
 </section>
 <section class="slide level1">
 
+<h2 id="machine-1-stability">Machine 1: Stability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-1-control">Machine 1: Control</h3>
-<p><strong>Pressure:</strong> 200kpa<br />
-<strong>Temperature:</strong> 338K</p>
-<p>Visualizing stability using an Individuals Control Chart for Machine
-1.</p>
+<h3 id="i-chart-analysis">I-Chart Analysis</h3>
+<p>Machine 1 operates within control limits with no violations in the
+first 200 samples.</p>
+<p><strong>Status:</strong> Unstable</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m1_ichart.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -578,14 +578,15 @@
 </section>
 <section class="slide level1">
 
+<h2 id="machine-1-capability">Machine 1: Capability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-1-capability">Machine 1: Capability</h3>
-<p><strong>Target:</strong> 50<br />
-<strong>Specs:</strong> [45, 55]</p>
-<p>Analysis of process capability indices (<span
-class="math inline">\(\sigma\)</span>) and distribution for the first
-200 observations.</p>
+<h3 id="capability-indices">Capability Indices</h3>
+<ul>
+<li><span class="math inline">\(C_p\)</span>: 1.524</li>
+<li><span class="math inline">\(C_{pk}\)</span>: 1.429</li>
+<li><span class="math inline">\(C_{pm}\)</span>: 1.465</li>
+</ul>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m1_cap.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -594,13 +595,12 @@ class="math inline">\(\sigma\)</span>) and distribution for the first
 </section>
 <section class="slide level1">
 
+<h2 id="machine-2-stability">Machine 2: Stability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-2-control">Machine 2: Control</h3>
-<p><strong>Pressure:</strong> 200kpa<br />
-<strong>Temperature:</strong> 338K</p>
-<p>Visualizing stability using an Individuals Control Chart for Machine
-2.</p>
+<h3 id="i-chart-analysis-1">I-Chart Analysis</h3>
+<p>Monitoring Machine 2 stability.</p>
+<p><strong>Status:</strong> Stable</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m2_ichart.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -609,14 +609,14 @@ class="math inline">\(\sigma\)</span>) and distribution for the first
 </section>
 <section class="slide level1">
 
+<h2 id="machine-2-capability">Machine 2: Capability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-2-capability">Machine 2: Capability</h3>
-<p><strong>Target:</strong> 50<br />
-<strong>Specs:</strong> [45, 55]</p>
-<p>Analysis of process capability indices (<span
-class="math inline">\(\sigma\)</span>) and distribution for the first
-200 observations.</p>
+<h3 id="capability-indices-1">Capability Indices</h3>
+<ul>
+<li><span class="math inline">\(C_p\)</span>: 2.828</li>
+<li><span class="math inline">\(C_{pk}\)</span>: 2.818</li>
+</ul>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m2_cap.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -625,13 +625,12 @@ class="math inline">\(\sigma\)</span>) and distribution for the first
 </section>
 <section class="slide level1">
 
+<h2 id="machine-3-stability">Machine 3: Stability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-3-control">Machine 3: Control</h3>
-<p><strong>Pressure:</strong> 200kpa<br />
-<strong>Temperature:</strong> 338K</p>
-<p>Visualizing stability using an Individuals Control Chart for Machine
-3.</p>
+<h3 id="i-chart-analysis-2">I-Chart Analysis</h3>
+<p>Monitoring Machine 3 stability.</p>
+<p><strong>Status:</strong> Stable</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m3_ichart.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -640,19 +639,81 @@ class="math inline">\(\sigma\)</span>) and distribution for the first
 </section>
 <section class="slide level1">
 
+<h2 id="machine-3-capability">Machine 3: Capability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-3-capability">Machine 3: Capability</h3>
-<p><strong>Target:</strong> 50<br />
-<strong>Specs:</strong> [45, 55]</p>
-<p>Analysis of process capability indices (<span
-class="math inline">\(\sigma\)</span>) and distribution for the first
-200 observations.</p>
+<h3 id="capability-indices-2">Capability Indices</h3>
+<ul>
+<li><span class="math inline">\(C_p\)</span>: 1.372</li>
+<li><span class="math inline">\(C_{pk}\)</span>: 1.073</li>
+</ul>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m3_cap.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
+</section>
+<section class="slide level1">
+
+<h2 id="performance-comparison">Performance Comparison</h2>
+<h3 id="ranking-summary">Ranking Summary</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 19%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Machine</th>
+<th style="text-align: left;">Stability</th>
+<th style="text-align: right;">Cp</th>
+<th style="text-align: right;">Cpk</th>
+<th style="text-align: right;">Cpl</th>
+<th style="text-align: right;">Cpu</th>
+<th style="text-align: right;">Cpm</th>
+<th style="text-align: right;">Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Stable</td>
+<td style="text-align: right;">2.828</td>
+<td style="text-align: right;">2.818</td>
+<td style="text-align: right;">2.837</td>
+<td style="text-align: right;">2.818</td>
+<td style="text-align: right;">2.826</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Unstable</td>
+<td style="text-align: right;">1.524</td>
+<td style="text-align: right;">1.429</td>
+<td style="text-align: right;">1.429</td>
+<td style="text-align: right;">1.619</td>
+<td style="text-align: right;">1.465</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Stable</td>
+<td style="text-align: right;">1.372</td>
+<td style="text-align: right;">1.073</td>
+<td style="text-align: right;">1.671</td>
+<td style="text-align: right;">1.073</td>
+<td style="text-align: right;">1.021</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusion:</strong> Machine 2 is the top performer.</p>
 </section>
 <section id="bibliography" class="slide level1">
 <h1>Bibliography</h1>
@@ -735,7 +796,7 @@ class="math inline">\(\sigma\)</span>) and distribution for the first
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
+        navigationMode: 'default',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,
