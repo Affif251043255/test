@@ -459,3 +459,81 @@ Moving Range (MR) chart for Machine 3 variability.
 <iframe data-src='media/plots/m3_m_chart.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Control Chart
+Individual measurements (X) for Machine 1.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m1_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Capability Analysis
+Full statistical analysis ($C_p, C_{pk}$) for Machine 1 showing how well the process stays within the limits ($LSL=45, USL=55$).
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m1_capability.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Control Chart
+Individual measurements (X) for Machine 2.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m2_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Capability Analysis
+Full statistical analysis for Machine 2.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m2_capability.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Control Chart
+Individual measurements (X) for Machine 3.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m3_control.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Capability Analysis
+Full statistical analysis for Machine 3.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/m3_capability.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
