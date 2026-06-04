@@ -101,3 +101,7 @@ Analysis of process capability indices ($\sigma$) and distribution for the first
 <iframe data-src='media/plots/m3_cap.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+# Bibliography
+<div id="refs"></div>

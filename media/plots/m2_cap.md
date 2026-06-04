@@ -1,0 +1,1 @@
+process.capability(qcc_obj, spec.limits=c(45,55), target=50)

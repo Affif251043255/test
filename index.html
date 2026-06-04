@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>slides</title>
+  <title>slides-with-biblio</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -24,7 +24,26 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/serif.css" id="theme">
   <button id="nav-btn" onclick="toggleNavMenu()" title="Open Slide List">📋 MENU</button>
 
@@ -539,93 +558,108 @@
     <div class="slides">
 
 
-<section>
-<section id="process-capability-analysis-report"
-class="title-slide slide level1">
+<section id="process-capability-analysis-report" class="slide level1">
 <h1>Process Capability Analysis Report</h1>
-
 </section>
-<section id="machine-1-analysis" class="slide level2">
-<h2>Machine 1 Analysis</h2>
+<section class="slide level1">
+
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="control-chart-individuals">Control Chart (Individuals)</h3>
-<p>Visualizing process stability for Machine 1 at 200kPa / 338K.</p>
+<h3 id="machine-1-control">Machine 1: Control</h3>
+<p><strong>Pressure:</strong> 200kpa<br />
+<strong>Temperature:</strong> 338K</p>
+<p>Visualizing stability using an Individuals Control Chart for Machine
+1.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m1_ichart.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="capability-analysis">Capability Analysis</h3>
-<p>Histogram and indices (<span class="math inline">\(C_p,
-C_{pk}\)</span>) for Machine 1 (<span class="math inline">\(LSL=45,
-USL=55\)</span>).</p>
+<h3 id="machine-1-capability">Machine 1: Capability</h3>
+<p><strong>Target:</strong> 50<br />
+<strong>Specs:</strong> [45, 55]</p>
+<p>Analysis of process capability indices (<span
+class="math inline">\(\sigma\)</span>) and distribution for the first
+200 observations.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m1_cap.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
 </section>
-<section id="machine-2-analysis" class="slide level2">
-<h2>Machine 2 Analysis</h2>
+<section class="slide level1">
+
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="control-chart-individuals-1">Control Chart (Individuals)</h3>
-<p>Visualizing process stability for Machine 2 at 200kPa / 338K.</p>
+<h3 id="machine-2-control">Machine 2: Control</h3>
+<p><strong>Pressure:</strong> 200kpa<br />
+<strong>Temperature:</strong> 338K</p>
+<p>Visualizing stability using an Individuals Control Chart for Machine
+2.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m2_ichart.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="capability-analysis-1">Capability Analysis</h3>
-<p>Histogram and indices (<span class="math inline">\(C_p,
-C_{pk}\)</span>) for Machine 2 (<span class="math inline">\(LSL=45,
-USL=55\)</span>).</p>
+<h3 id="machine-2-capability">Machine 2: Capability</h3>
+<p><strong>Target:</strong> 50<br />
+<strong>Specs:</strong> [45, 55]</p>
+<p>Analysis of process capability indices (<span
+class="math inline">\(\sigma\)</span>) and distribution for the first
+200 observations.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m2_cap.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
 </section>
-<section id="machine-3-analysis" class="slide level2">
-<h2>Machine 3 Analysis</h2>
+<section class="slide level1">
+
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="control-chart-individuals-2">Control Chart (Individuals)</h3>
-<p>Visualizing process stability for Machine 3 at 200kPa / 338K.</p>
+<h3 id="machine-3-control">Machine 3: Control</h3>
+<p><strong>Pressure:</strong> 200kpa<br />
+<strong>Temperature:</strong> 338K</p>
+<p>Visualizing stability using an Individuals Control Chart for Machine
+3.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m3_ichart.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="capability-analysis-2">Capability Analysis</h3>
-<p>Histogram and indices (<span class="math inline">\(C_p,
-C_{pk}\)</span>) for Machine 3 (<span class="math inline">\(LSL=45,
-USL=55\)</span>).</p>
+<h3 id="machine-3-capability">Machine 3: Capability</h3>
+<p><strong>Target:</strong> 50<br />
+<strong>Specs:</strong> [45, 55]</p>
+<p>Analysis of process capability indices (<span
+class="math inline">\(\sigma\)</span>) and distribution for the first
+200 observations.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m3_cap.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
 </section>
-<section class="slide level2">
+<section id="bibliography" class="slide level1">
+<h1>Bibliography</h1>
+<div id="refs" role="list">
 
-</section></section>
+</div>
+</section>
     </div>
   </div>
 
@@ -701,7 +735,7 @@ USL=55\)</span>).</p>
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'default',
+        navigationMode: 'linear',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,
