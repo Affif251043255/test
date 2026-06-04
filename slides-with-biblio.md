@@ -1,70 +1,35 @@
 ---
-title-slide: false
+title: Manufacturing Quality Report
 theme: serif
 ---
 
-# Machine Performance Report
+# SPC & Capability Analysis
 
 ---
 
-## Machine 1: Stability
+## Global Comparison Table
 
-:::: {.columns}
-::: {.column width="50%"}
-### I-Chart Analysis
-Machine 1 operates within control limits with no violations in the first 200 samples.
+|   Machine |   Mean |   StdDev | Stability     |    Cp |   Cpk |   Cpm | Capable   |   Rank |
+|----------:|-------:|---------:|:--------------|------:|------:|------:|:----------|-------:|
+|         2 | 49.985 |    0.548 | Special Cause | 3.06  | 3.051 | 3.059 | Yes       |      1 |
+|         1 | 49.661 |    1.141 | Special Cause | 1.474 | 1.374 | 1.412 | Yes       |      2 |
+|         3 | 51.172 |    1.185 | Special Cause | 1.387 | 1.062 | 0.993 | No        |      3 |
 
-**Status:** Unstable
-:::
-
-::: {.column width="50%"}
-<iframe data-src='media/plots/m1_ichart.html' width='100%' height='500px' style='border:none;'></iframe>
-:::
-::::
+**Best Performer:** Machine 2
 
 ---
 
-## Machine 1: Capability
+## Machine 2: SPC & Capability
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Capability Indices
-- $C_p$: 1.524
-- $C_{pk}$: 1.429
-- $C_{pm}$: 1.465
-:::
+### Statistical Summary
+- **Stability:** Special Cause
+- **Mean:** 49.985 mm
+- **Cpk:** 3.051
+- **Capable (1.33):** Yes
 
-::: {.column width="50%"}
-<iframe data-src='media/plots/m1_cap.html' width='100%' height='500px' style='border:none;'></iframe>
-:::
-::::
-
----
-
-## Machine 2: Stability
-
-:::: {.columns}
-::: {.column width="50%"}
-### I-Chart Analysis
-Monitoring Machine 2 stability.
-
-**Status:** Stable
-:::
-
-::: {.column width="50%"}
-<iframe data-src='media/plots/m2_ichart.html' width='100%' height='500px' style='border:none;'></iframe>
-:::
-::::
-
----
-
-## Machine 2: Capability
-
-:::: {.columns}
-::: {.column width="50%"}
-### Capability Indices
-- $C_p$: 2.828
-- $C_{pk}$: 2.818
+*Target: 50.0 | Tolerance: ±5.0*
 :::
 
 ::: {.column width="50%"}
@@ -74,49 +39,43 @@ Monitoring Machine 2 stability.
 
 ---
 
-## Machine 3: Stability
+## Machine 1: SPC & Capability
 
 :::: {.columns}
 ::: {.column width="50%"}
-### I-Chart Analysis
-Monitoring Machine 3 stability.
+### Statistical Summary
+- **Stability:** Special Cause
+- **Mean:** 49.661 mm
+- **Cpk:** 1.374
+- **Capable (1.33):** Yes
 
-**Status:** Stable
+*Target: 50.0 | Tolerance: ±5.0*
 :::
 
 ::: {.column width="50%"}
-<iframe data-src='media/plots/m3_ichart.html' width='100%' height='500px' style='border:none;'></iframe>
+<iframe data-src='media/plots/m1_cap.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
 
 ---
 
-## Machine 3: Capability
+## Machine 3: SPC & Capability
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Capability Indices
-- $C_p$: 1.372
-- $C_{pk}$: 1.073
+### Statistical Summary
+- **Stability:** Special Cause
+- **Mean:** 51.172 mm
+- **Cpk:** 1.062
+- **Capable (1.33):** No
+
+*Target: 50.0 | Tolerance: ±5.0*
 :::
 
 ::: {.column width="50%"}
 <iframe data-src='media/plots/m3_cap.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
-
----
-
-## Performance Comparison
-
-### Ranking Summary
-|   Machine | Stability   |    Cp |   Cpk |   Cpl |   Cpu |   Cpm |   Rank |
-|----------:|:------------|------:|------:|------:|------:|------:|-------:|
-|         2 | Stable      | 2.828 | 2.818 | 2.837 | 2.818 | 2.826 |      1 |
-|         1 | Unstable    | 1.524 | 1.429 | 1.429 | 1.619 | 1.465 |      2 |
-|         3 | Stable      | 1.372 | 1.073 | 1.671 | 1.073 | 1.021 |      3 |
-
-**Conclusion:** Machine 2 is the top performer.
 
 ---
 # Bibliography

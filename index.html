@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>slides-with-biblio</title>
+  <title>Manufacturing Quality Report</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -557,66 +557,92 @@
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide">
+  <h1 class="title">Manufacturing Quality Report</h1>
+</section>
 
-<section id="machine-performance-report" class="slide level1">
-<h1>Machine Performance Report</h1>
+<section id="spc-capability-analysis" class="slide level1">
+<h1>SPC &amp; Capability Analysis</h1>
 </section>
 <section class="slide level1">
 
-<h2 id="machine-1-stability">Machine 1: Stability</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="i-chart-analysis">I-Chart Analysis</h3>
-<p>Machine 1 operates within control limits with no violations in the
-first 200 samples.</p>
-<p><strong>Status:</strong> Unstable</p>
-</div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m1_ichart.html" width="100%" height="500px" style="border:none;">
-</iframe>
-</div>
-</div>
+<h2 id="global-comparison-table">Global Comparison Table</h2>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 17%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 13%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Machine</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">StdDev</th>
+<th style="text-align: left;">Stability</th>
+<th style="text-align: right;">Cp</th>
+<th style="text-align: right;">Cpk</th>
+<th style="text-align: right;">Cpm</th>
+<th style="text-align: left;">Capable</th>
+<th style="text-align: right;">Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">49.985</td>
+<td style="text-align: right;">0.548</td>
+<td style="text-align: left;">Special Cause</td>
+<td style="text-align: right;">3.06</td>
+<td style="text-align: right;">3.051</td>
+<td style="text-align: right;">3.059</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">49.661</td>
+<td style="text-align: right;">1.141</td>
+<td style="text-align: left;">Special Cause</td>
+<td style="text-align: right;">1.474</td>
+<td style="text-align: right;">1.374</td>
+<td style="text-align: right;">1.412</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">51.172</td>
+<td style="text-align: right;">1.185</td>
+<td style="text-align: left;">Special Cause</td>
+<td style="text-align: right;">1.387</td>
+<td style="text-align: right;">1.062</td>
+<td style="text-align: right;">0.993</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Best Performer:</strong> Machine 2</p>
 </section>
 <section class="slide level1">
 
-<h2 id="machine-1-capability">Machine 1: Capability</h2>
+<h2 id="machine-2-spc-capability">Machine 2: SPC &amp; Capability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="capability-indices">Capability Indices</h3>
+<h3 id="statistical-summary">Statistical Summary</h3>
 <ul>
-<li><span class="math inline">\(C_p\)</span>: 1.524</li>
-<li><span class="math inline">\(C_{pk}\)</span>: 1.429</li>
-<li><span class="math inline">\(C_{pm}\)</span>: 1.465</li>
+<li><strong>Stability:</strong> Special Cause</li>
+<li><strong>Mean:</strong> 49.985 mm</li>
+<li><strong>Cpk:</strong> 3.051</li>
+<li><strong>Capable (1.33):</strong> Yes</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m1_cap.html" width="100%" height="500px" style="border:none;">
-</iframe>
-</div>
-</div>
-</section>
-<section class="slide level1">
-
-<h2 id="machine-2-stability">Machine 2: Stability</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="i-chart-analysis-1">I-Chart Analysis</h3>
-<p>Monitoring Machine 2 stability.</p>
-<p><strong>Status:</strong> Stable</p>
-</div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m2_ichart.html" width="100%" height="500px" style="border:none;">
-</iframe>
-</div>
-</div>
-</section>
-<section class="slide level1">
-
-<h2 id="machine-2-capability">Machine 2: Capability</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="capability-indices-1">Capability Indices</h3>
-<ul>
-<li><span class="math inline">\(C_p\)</span>: 2.828</li>
-<li><span class="math inline">\(C_{pk}\)</span>: 2.818</li>
-</ul>
+<p><em>Target: 50.0 | Tolerance: ±5.0</em></p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m2_cap.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -625,95 +651,41 @@ first 200 samples.</p>
 </section>
 <section class="slide level1">
 
-<h2 id="machine-3-stability">Machine 3: Stability</h2>
+<h2 id="machine-1-spc-capability">Machine 1: SPC &amp; Capability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="i-chart-analysis-2">I-Chart Analysis</h3>
-<p>Monitoring Machine 3 stability.</p>
-<p><strong>Status:</strong> Stable</p>
+<h3 id="statistical-summary-1">Statistical Summary</h3>
+<ul>
+<li><strong>Stability:</strong> Special Cause</li>
+<li><strong>Mean:</strong> 49.661 mm</li>
+<li><strong>Cpk:</strong> 1.374</li>
+<li><strong>Capable (1.33):</strong> Yes</li>
+</ul>
+<p><em>Target: 50.0 | Tolerance: ±5.0</em></p>
 </div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m3_ichart.html" width="100%" height="500px" style="border:none;">
+<iframe data-src="media/plots/m1_cap.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
 </section>
 <section class="slide level1">
 
-<h2 id="machine-3-capability">Machine 3: Capability</h2>
+<h2 id="machine-3-spc-capability">Machine 3: SPC &amp; Capability</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="capability-indices-2">Capability Indices</h3>
+<h3 id="statistical-summary-2">Statistical Summary</h3>
 <ul>
-<li><span class="math inline">\(C_p\)</span>: 1.372</li>
-<li><span class="math inline">\(C_{pk}\)</span>: 1.073</li>
+<li><strong>Stability:</strong> Special Cause</li>
+<li><strong>Mean:</strong> 51.172 mm</li>
+<li><strong>Cpk:</strong> 1.062</li>
+<li><strong>Capable (1.33):</strong> No</li>
 </ul>
+<p><em>Target: 50.0 | Tolerance: ±5.0</em></p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m3_cap.html" width="100%" height="500px" style="border:none;">
 </iframe>
 </div>
 </div>
-</section>
-<section class="slide level1">
-
-<h2 id="performance-comparison">Performance Comparison</h2>
-<h3 id="ranking-summary">Ranking Summary</h3>
-<table style="width:100%;">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 19%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 11%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Machine</th>
-<th style="text-align: left;">Stability</th>
-<th style="text-align: right;">Cp</th>
-<th style="text-align: right;">Cpk</th>
-<th style="text-align: right;">Cpl</th>
-<th style="text-align: right;">Cpu</th>
-<th style="text-align: right;">Cpm</th>
-<th style="text-align: right;">Rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">Stable</td>
-<td style="text-align: right;">2.828</td>
-<td style="text-align: right;">2.818</td>
-<td style="text-align: right;">2.837</td>
-<td style="text-align: right;">2.818</td>
-<td style="text-align: right;">2.826</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">Unstable</td>
-<td style="text-align: right;">1.524</td>
-<td style="text-align: right;">1.429</td>
-<td style="text-align: right;">1.429</td>
-<td style="text-align: right;">1.619</td>
-<td style="text-align: right;">1.465</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">Stable</td>
-<td style="text-align: right;">1.372</td>
-<td style="text-align: right;">1.073</td>
-<td style="text-align: right;">1.671</td>
-<td style="text-align: right;">1.073</td>
-<td style="text-align: right;">1.021</td>
-<td style="text-align: right;">3</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Conclusion:</strong> Machine 2 is the top performer.</p>
 </section>
 <section id="bibliography" class="slide level1">
 <h1>Bibliography</h1>
@@ -876,14 +848,6 @@ first 200 samples.</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
-        // The "normal" size of the presentation, aspect ratio will be preserved
-        // when the presentation is scaled to fit different resolutions. Can be
-        // specified using percentage units.
-        width: "90%",
-
-        // Factor of the display size that should remain empty around the content
-        margin: 0.1,
 
         math: {
           mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
